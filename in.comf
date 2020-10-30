@@ -47,11 +47,12 @@ available=日本, server-tag-regex=.*日本|JP|Japan, img-url=https://raw.github
 #新加坡
 available=新加坡, server-tag-regex=.*新加坡|狮城|SG|Singapore, img-url=https://raw.githubusercontent.com/gitb1/Quantumultx/main/icon/x/%20sg.png
 
-
 #香港
 available=香港, server-tag-regex=.*香港|HK|HongKong, img-url=https://raw.githubusercontent.com/gitb1/Quantumultx/main/icon/x/hk.png
+
 #电报代理
 static=电报代理, 新加坡, 日本, 美国, 香港, 台湾, 英国, IPLC, img-url=https://raw.githubusercontent.com/gitb1/Quantumultx/main/icon/x/telegram.png
+
 #国际网络
 static=全球加速, 香港, 美国, 日本, 台湾, 新加坡, 英国, proxy, reject, img-url=https://raw.githubusercontent.com/gitb1/Quantumultx/main/icon/x/ie.png
 
@@ -60,13 +61,19 @@ static=国际媒体, 香港, 日本, 美国, 台湾, 新加坡, img-url=https://
 
 #𝐘𝐨𝐮𝐓𝐮𝐛𝐞
 static=𝐘𝐨𝐮𝐓𝐮𝐛𝐞, 台湾, 香港, 英国, 美国, 日本, 新加坡, IPLC, img-url=https://raw.githubusercontent.com/gitb1/Quantumultx/main/icon/x/youtube.png
+
 #𝐏𝐨𝐫𝐧𝐇𝐮𝐛
 static=𝐏𝐨𝐫𝐧𝐇𝐮𝐛, 英国, 台湾, 美国, 香港, 日本, img-url=https://raw.githubusercontent.com/gitb1/Quantumultx/main/icon/x/pornhub.png
 
 #奈飞
 static=网飞影视, 新加坡, 香港, 台湾, 美国, img-url=https://raw.githubusercontent.com/gitb1/Quantumultx/main/icon/x/netflix.png
+
 #𝐓𝐢𝐤𝐓𝐨𝐤
 static=𝐓𝐢𝐤𝐓𝐨𝐤, 美国, 日本, 台湾, 香港, img-url=https://raw.githubusercontent.com/gitb1/Quantumultx/main/icon/x/tiktok.png
+
+#Github
+static=Github, 美国, 日本, 台湾, 香港, img-url=https://raw.githubusercontent.com/gitb1/Quantumultx/main/icon/x/github.png
+
 #苹果服务
 static=苹果服务, direct, 香港, 美国, img-url=https://raw.githubusercontent.com/gitb1/Quantumultx/main/icon/x/iphone.png
 
@@ -92,6 +99,9 @@ https://raw.githubusercontent.com/Git181/QuantumultX/main/Filter/Telegram.list, 
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Guard/Hijacking.list, tag=运营劫持, force-policy=reject, update-interval=86400, opt-parser=false, enabled=true
 #奈飞
 https://raw.githubusercontent.com/Git181/QuantumultX/main/Filter/Netflix.list, tag=网飞影视, force-policy=网飞影视, update-interval=86400, opt-parser=false, enabled=true
+
+#Github
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Github/Github.list, tag=Github, force-policy=Github, update-interval=86400, opt-parser=true, enabled=true
 
 # > Youtube
 https://raw.githubusercontent.com/Git181/QuantumultX/main/Filter/YouTube.list, tag=𝐘𝐨𝐮𝐓𝐮𝐛𝐞, force-policy=𝐘𝐨𝐮𝐓𝐮𝐛𝐞, update-interval=86400, opt-parser=true, enabled=true
