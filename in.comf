@@ -190,11 +190,7 @@ final, 黑白名单
 #挖矿
 0 10 0 * * * ttwbxcxSign.js, tag=天天挖矿小程序, img-url=https://raw.githubusercontent.com/Orz-3/task/master/ttwkxcx.png, enabled=true
 
-#5656
 
-#苏宁易购
-1 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/suning/suning.js, tag=苏宁易购, img-url=https://raw.githubusercontent.com/Git181/QuantumultX/main/icon/cn.PNG, enabled=true
-#百度签到
 1 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.js, tag=百度签到, img-url=https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.js, enabled=true
 #百度贴吧
 0 9 * * * https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js, tag=百度贴吧, img-url=https://raw.githubusercontent.com/Git181/QuantumultX/main/icon/jp1.png, enabled=true
