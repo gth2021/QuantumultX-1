@@ -1,3 +1,6 @@
+
+hostname = mp.weixin.qq.com, api.gamer.com.tw, trade-acs.m.taobao.com, api.m.jd.com, ios.prod.ftl.netflix.com, *.xxjjappss.com,*.huaerdadi.com, api1.dobenge.cn,api.meiease.c*, splice.oracle.*.com, vip1.kuwo.cn,
+
 # 去微信公众号广告 (By Choler)
 ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
 
