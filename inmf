@@ -68,6 +68,8 @@ static=𝐏𝐨𝐫𝐧𝐇𝐮𝐛, 英国, 台湾, 美国, 香港, 日本, img
 #奈飞
 static=网飞影视, 新加坡, 香港, 台湾, 美国, img-url=https://raw.githubusercontent.com/gitb1/Quantumultx/main/icon/x/netflix.png
 
+static=spotify, 新加坡, 香港, 台湾, 美国, img-url=https://raw.githubusercontent.com/gitb1/Quantumultx/main/icon/x/spotify.png
+
 #𝐓𝐢𝐤𝐓𝐨𝐤
 static=𝐓𝐢𝐤𝐓𝐨𝐤, 美国, 日本, 台湾, 香港, img-url=https://raw.githubusercontent.com/gitb1/Quantumultx/main/icon/x/tiktok.png
 
@@ -94,9 +96,15 @@ https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/AdRule.list, 
 #瘾私保护
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Guard/Privacy.list, tag=隐私保护, force-policy=reject, update-interval=86400, opt-parser=false, enabled=true
 #运营劫持
+
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Guard/Hijacking.list, tag=运营劫持, force-policy=reject, update-interval=86400, opt-parser=false, enabled=true
+
 #电报代理
 https://raw.githubusercontent.com/Git181/QuantumultX/main/Filter/Telegram.list, tag=电报代理, force-policy=电报代理, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Guard/Hijacking.list, tag=运营劫持, force-policy=reject, update-interval=86400, opt-parser=false, enabled=true
+
+#spotify
+https://raw.githubusercontent.com/Git181/QuantumultX/main/Filter/spotify, tag= spotify, force-policy=spotify, update-interval=86400, opt-parser=false, enabled=true
+
 #奈飞
 https://raw.githubusercontent.com/Git181/QuantumultX/main/Filter/Netflix.list, tag=网飞影视, force-policy=网飞影视, update-interval=86400, opt-parser=false, enabled=true
 
