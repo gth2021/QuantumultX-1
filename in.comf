@@ -6,7 +6,6 @@ geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubuserc
 resource_parser_url=https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
 profile_img_url=https://raw.githubusercontent.com/gitb1/Quantumultx/main/icon/quantumultx.png
 
-profile_img_url=https://raw.githubusercontent.com/gitb1/Quantumultx/main/icon/quantumultx.png
 
 #指定dns服务器和域名解析
 [dns]
