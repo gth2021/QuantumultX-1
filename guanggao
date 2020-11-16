@@ -560,7 +560,7 @@ IP-CIDR,118.89.204.198/32,REJECT
 DOMAIN,apppv.zol.com.cn,REJECT
 DOMAIN,pvnapp.zol.com.cn,REJECT
 
-广告行
+# > 广告行
 # Update > 2020.7.27 This rule is based on optimization by lhie1/Rules.
 DOMAIN-SUFFIX,apoll.m.taobao.com,REJECT
 DOMAIN-SUFFIX,comet.yahoo.com,REJECT
