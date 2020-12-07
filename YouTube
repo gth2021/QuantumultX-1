@@ -4,3 +4,7 @@ USER-AGENT,YouTube*,Streaming
 DOMAIN-SUFFIX,googlevideo.com,Streaming
 DOMAIN-SUFFIX,youtube.com,Streaming
 DOMAIN,youtubei.googleapis.com,Streaming
+
+# > YouTubeMusic
+USER-AGENT,com.google.ios.youtubemusic*,Streaming
+USER-AGENT,YouTubeMusic*,Streaming
