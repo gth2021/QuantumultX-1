@@ -28,9 +28,6 @@ DOMAIN-SUFFIX,soundcloud.com,Streaming
 # > TIDAL
 USER-AGENT,TIDAL*,Streaming
 DOMAIN-SUFFIX,tidal.com,Streaming
-# > YouTubeMusic
-USER-AGENT,com.google.ios.youtubemusic*,Streaming
-USER-AGENT,YouTubeMusic*,Streaming
 # (Video)
 # > AbemaTV
 USER-AGENT,AbemaTV*,Streaming
