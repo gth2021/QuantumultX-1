@@ -9,7 +9,6 @@
 (?<=&app_version=)1[6-9]..(?=.?.?&) 100. 307
 (?<=\?version_code=)1[6-9]..(?=.?.?&) 100. 307
 
-[URL Rewrite]
 
 [URL Rewrite]
 (.*video_id=\w{32})(.*watermark=)(.*) $1 302
