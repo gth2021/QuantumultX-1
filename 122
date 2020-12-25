@@ -10,4 +10,4 @@
 ((carrier|account|sys)_region=)CN JP 302
 
 [MITM]
-hostname = %APPEND% *.tiktokv.com, *.byteoversea.com, *.musical.ly, *.snssdk.com
+hostname = ,api*.tiktokv.com,*.musical.ly,
