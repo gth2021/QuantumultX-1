@@ -1,7 +1,7 @@
 
-#!name=TikTok Unlock
-#!desc=Remove TikTok's regional restrictions.
-#!system=ios
+[Rule]
+DOMAIN,api-h2.tiktokv.com,PROXY
+DOMAIN,api2-16-h2.musical.ly,PROXY
 
 
 
