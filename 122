@@ -1,8 +1,4 @@
 
-[Rule]
-DOMAIN,api-h2.tiktokv.com,PROXY
-DOMAIN,api2-16-h2.musical.ly,PROXY
-
 
 
 [URL Rewrite]
