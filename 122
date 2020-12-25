@@ -1,9 +1,0 @@
-
-
-
-[URL Rewrite]
-(.*video_id=\w{32})(.*watermark=)(.*) $1 302
-((carrier|account|sys)_region=)CN JP 302
-
-[MITM]
-hostname = ,api*.tiktokv.com,*.musical.ly,
