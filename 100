@@ -6,64 +6,333 @@
 	<array>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.sendmessage</string>
+			<string>is.workflow.actions.weather.forecast</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
-				<key>ShowWhenRun</key>
-				<false/>
-				<key>WFSendMessageActionRecipients</key>
+				<key>UUID</key>
+				<string>FCE110C3-D8D7-4EE4-835D-0E2A0D9A7A93</string>
+				<key>WFWeatherCustomLocation</key>
 				<dict>
-					<key>Value</key>
-					<dict>
-						<key>WFContactFieldValues</key>
-						<array>
-							<dict>
-								<key>EntryType</key>
-								<integer>1</integer>
-								<key>SerializedEntry</key>
-								<dict>
-									<key>link.contentkit.phonenumber</key>
-									<string>10010</string>
-								</dict>
-							</dict>
-						</array>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFContactFieldValue</string>
+					<key>isCurrentLocation</key>
+					<true/>
 				</dict>
-				<key>WFSendMessageContent</key>
-				<string>102</string>
+				<key>WFWeatherForecastType</key>
+				<string>Hourly</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.sendmessage</string>
+			<string>is.workflow.actions.properties.weather.conditions</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
-				<key>ShowWhenRun</key>
-				<false/>
-				<key>WFSendMessageActionRecipients</key>
+				<key>UUID</key>
+				<string>8E8ED586-68CB-4CA8-91D5-C70370520CA2</string>
+				<key>WFContentItemPropertyName</key>
+				<string>Precipitation Chance</string>
+				<key>WFInput</key>
 				<dict>
 					<key>Value</key>
 					<dict>
-						<key>WFContactFieldValues</key>
-						<array>
-							<dict>
-								<key>EntryType</key>
-								<integer>1</integer>
-								<key>SerializedEntry</key>
-								<dict>
-									<key>link.contentkit.phonenumber</key>
-									<string>10010</string>
-								</dict>
-							</dict>
-						</array>
+						<key>OutputName</key>
+						<string>天气状况</string>
+						<key>OutputUUID</key>
+						<string>FCE110C3-D8D7-4EE4-835D-0E2A0D9A7A93</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
 					</dict>
 					<key>WFSerializationType</key>
-					<string>WFContactFieldValue</string>
+					<string>WFTextTokenAttachment</string>
 				</dict>
-				<key>WFSendMessageContent</key>
-				<string>YEMX</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.repeat.count</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>9F38BB94-8F33-40EB-9086-3771FE4952DD</string>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFRepeatCount</key>
+				<real>9</real>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.getitemfromlist</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>556BA5CF-B845-4EE2-8419-8ED909FE7E8C</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>降水概率</string>
+						<key>OutputUUID</key>
+						<string>8E8ED586-68CB-4CA8-91D5-C70370520CA2</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFItemIndex</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>Type</key>
+						<string>Variable</string>
+						<key>VariableName</key>
+						<string>Repeat Index</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFItemSpecifier</key>
+				<string>Item At Index</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>0A79F538-023D-4F0E-BFDC-5037FF1792F4</string>
+				<key>WFCondition</key>
+				<integer>2</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>OutputName</key>
+							<string>来自列表的项目</string>
+							<key>OutputUUID</key>
+							<string>556BA5CF-B845-4EE2-8419-8ED909FE7E8C</string>
+							<key>Type</key>
+							<string>ActionOutput</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+				<key>WFNumberValue</key>
+				<string>50</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.appendvariable</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>Type</key>
+						<string>Variable</string>
+						<key>VariableName</key>
+						<string>Repeat Index</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFVariableName</key>
+				<string>TRain</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>0A79F538-023D-4F0E-BFDC-5037FF1792F4</string>
+				<key>WFControlFlowMode</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>0A79F538-023D-4F0E-BFDC-5037FF1792F4</string>
+				<key>UUID</key>
+				<string>DF39AC25-7634-4A33-A3D4-68358EFEDB93</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.repeat.count</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>9F38BB94-8F33-40EB-9086-3771FE4952DD</string>
+				<key>UUID</key>
+				<string>0B0CCE08-0839-497B-82E3-2496345A2DE1</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>602A1E38-4C63-4F86-86F9-E9D160852C05</string>
+				<key>WFCondition</key>
+				<integer>100</integer>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>Type</key>
+							<string>Variable</string>
+							<key>VariableName</key>
+							<string>TRain</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.getitemfromlist</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>E3593A0E-2755-4D8F-9FF3-0BD42EEB9197</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>Type</key>
+						<string>Variable</string>
+						<key>VariableName</key>
+						<string>TRain</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.math</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>DE91D087-B522-4EAE-BDE0-DE31AA678396</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>来自列表的项目</string>
+						<key>OutputUUID</key>
+						<string>E3593A0E-2755-4D8F-9FF3-0BD42EEB9197</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFMathOperand</key>
+				<string>1</string>
+				<key>WFMathOperation</key>
+				<string>-</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.notification</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFNotificationActionBody</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>计算结果</string>
+								<key>OutputUUID</key>
+								<string>DE91D087-B522-4EAE-BDE0-DE31AA678396</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>小时后可能会降雨🌧️，记得带伞🌂。</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+				<key>WFNotificationActionSound</key>
+				<false/>
+				<key>WFNotificationActionTitle</key>
+				<string></string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>602A1E38-4C63-4F86-86F9-E9D160852C05</string>
+				<key>WFControlFlowMode</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.notification</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFNotificationActionBody</key>
+				<string>未来九个小时应该不会下雨。</string>
+				<key>WFNotificationActionSound</key>
+				<false/>
+				<key>WFNotificationActionTitle</key>
+				<string></string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>602A1E38-4C63-4F86-86F9-E9D160852C05</string>
+				<key>UUID</key>
+				<string>E8C8D88A-A6E6-4739-87D9-B074D0833751</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
 			</dict>
 		</dict>
 	</array>
@@ -72,14 +341,32 @@
 	<key>WFWorkflowIcon</key>
 	<dict>
 		<key>WFWorkflowIconGlyphNumber</key>
-		<integer>59814</integer>
+		<integer>61440</integer>
 		<key>WFWorkflowIconStartColor</key>
-		<integer>431817727</integer>
+		<integer>-23508481</integer>
 	</dict>
 	<key>WFWorkflowImportQuestions</key>
 	<array/>
 	<key>WFWorkflowInputContentItemClasses</key>
-	<array/>
+	<array>
+		<string>WFAppStoreAppContentItem</string>
+		<string>WFArticleContentItem</string>
+		<string>WFContactContentItem</string>
+		<string>WFDateContentItem</string>
+		<string>WFEmailAddressContentItem</string>
+		<string>WFGenericFileContentItem</string>
+		<string>WFImageContentItem</string>
+		<string>WFiTunesProductContentItem</string>
+		<string>WFLocationContentItem</string>
+		<string>WFDCMapsLinkContentItem</string>
+		<string>WFAVAssetContentItem</string>
+		<string>WFPDFContentItem</string>
+		<string>WFPhoneNumberContentItem</string>
+		<string>WFRichTextContentItem</string>
+		<string>WFSafariWebPageContentItem</string>
+		<string>WFStringContentItem</string>
+		<string>WFURLContentItem</string>
+	</array>
 	<key>WFWorkflowMinimumClientVersion</key>
 	<integer>900</integer>
 	<key>WFWorkflowMinimumClientVersionString</key>
@@ -87,7 +374,6 @@
 	<key>WFWorkflowTypes</key>
 	<array>
 		<string>Watch</string>
-		<string>NCWidget</string>
 	</array>
 </dict>
 </plist>
