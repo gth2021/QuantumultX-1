@@ -15,6 +15,3 @@ DOMAIN-SUFFIX,docs.google.com,GoogleDrive
 DOMAIN-SUFFIX,drive.google.com,GoogleDrive
 DOMAIN-SUFFIX,googledrive.com,GoogleDrive
 DOMAIN-SUFFIX,googleusercontent.com,GoogleDrive
-
-# > Google Search
-DOMAIN-KEYWORD,www.google.,GoogleSearch
