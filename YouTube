@@ -10,3 +10,4 @@ USER-AGENT,com.google.ios.youtubemusic*,Streaming
 USER-AGENT,YouTubeMusic*,Streaming
 # > Google
 DOMAIN-KEYWORD,google,PROXY
+DOMAIN-KEYWORD,.blogspot.,PROXY
