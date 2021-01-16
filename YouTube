@@ -9,4 +9,4 @@ DOMAIN,youtubei.googleapis.com,Streaming
 USER-AGENT,com.google.ios.youtubemusic*,Streaming
 USER-AGENT,YouTubeMusic*,Streaming
 # > Google
-DOMAIN-KEYWORD,.blogspot.,PROXY
+DOMAIN-KEYWORD,google,PROXY
