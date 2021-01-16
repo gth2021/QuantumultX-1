@@ -9,7 +9,3 @@ DOMAIN,youtubei.googleapis.com,Streaming
 USER-AGENT,com.google.ios.youtubemusic*,Streaming
 USER-AGENT,YouTubeMusic*,Streaming
 # > Google
-
-DOMAIN-SUFFIX,appspot.com,PROXY
-DOMAIN-SUFFIX,blogger.com,PROXY
-DOMAIN-SUFFIX,getoutline.org,PROXY
