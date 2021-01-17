@@ -1,7 +1,4 @@
 
-
-DOMAIN-KEYWORD,google,PROXY
-DOMAIN-KEYWORD,.blogspot.,PROXY
 # > Google Drive
 USER-AGENT,%E4%BA%91%E7%AB%AF%E7%A1%AC%E7%9B%98*,GoogleDrive
 USER-AGENT,Google.Drive*,GoogleDrive
